@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app="page5Module"  ng-controller="page5Controller">
+<head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <script src="../Scripts/angular.js"></script>
+    <script src="scritps/Page5Controller.js"></script>
+</head>
+</head>
+<body style="font-family: Arial;">
+    NG-REPEAT
+    <br/>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in employees">
+                <td>{{ item.firstName }}</td>
+                <td>{{ item.lastName }}</td>
+                <td>{{ item.age }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <div>
+        NG-REPEAT with Indexes
+        <br/>
+        <ul>
+            <li ng-repeat="item2 in countries">
+                {{ item2.countryName}} - Index = {{ $index }}
+                <ul>
+                    <li ng-repeat="item3 in item2.cities">
+                        {{ item3.cityName }} -- ParentIndex[{{ $parent.$index }}], Index {{ $index }}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        Another Index Test:
+        <ul>
+            <li ng-repeat="item in countries" ng-init="myParentIndex=$index">
+                {{ item.countryName}} - Index = {{ $index }}
+                <ul>
+                    <li ng-repeat="item2 in item.cities">
+                        {{ item2.cityName }} -- ParentIndex[{{ myParentIndex }}], Index {{ $index }}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

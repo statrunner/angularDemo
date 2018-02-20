@@ -134,10 +134,12 @@
     <Content Include="Angular\Page2.html" />
     <Content Include="Angular\Page3.html" />
     <Content Include="Angular\Page4.html" />
+    <Content Include="Angular\Page5.html" />
     <Content Include="Angular\scritps\Page1Controller.js" />
     <Content Include="Angular\scritps\Page2Controller.js" />
     <Content Include="Angular\scritps\Page3Controller.js" />
     <Content Include="Angular\scritps\Page4Controller.js" />
+    <Content Include="Angular\scritps\Page5Controller.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />
