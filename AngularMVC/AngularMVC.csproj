@@ -129,8 +129,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Angular\AngularTestPage1.html" />
-    <Content Include="Angular\scritps\TestPageController.js" />
+    <Content Include="Angular\media\usa_flag.png" />
+    <Content Include="Angular\Page1.html" />
+    <Content Include="Angular\Page2.html" />
+    <Content Include="Angular\Page3.html" />
+    <Content Include="Angular\Page4.html" />
+    <Content Include="Angular\scritps\Page1Controller.js" />
+    <Content Include="Angular\scritps\Page2Controller.js" />
+    <Content Include="Angular\scritps\Page3Controller.js" />
+    <Content Include="Angular\scritps\Page4Controller.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />
