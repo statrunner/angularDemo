@@ -1,0 +1,35 @@
+﻿<html ng-app="page6Module">
+<head>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="scritps/Page6Controller.js"></script>
+    <link href="style/page6.css" rel="stylesheet" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div ng-controller="page6Controller">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Likes</th>
+                <th>Dislikes</th>
+                <th>Like/Dislike</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in technologies">
+                <td>{{ item.name }}</td>
+                <td>{{ item.like }}</td>
+                <td>{{ item.dislike }}</td>
+                <td>
+                    <input type="button" value="Like" ng-click="incrementLike(item)" />
+                    <input type="button" value="Dislike" ng-click="incrementDislike(item)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+</body>
+</html>
