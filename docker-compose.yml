@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  angularmvc:
+    image: angularmvc
+    build:
+      context: .\AngularMVC
+      dockerfile: Dockerfile
