@@ -130,6 +130,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Angular\AngularTestPage1.html" />
+    <Content Include="Angular\scritps\TestPageController.js" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />

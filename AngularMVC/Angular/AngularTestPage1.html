@@ -1,19 +1,17 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="myModule">
 <head>
     <meta charset="utf-8" />
     <title></title>
     <script src="../Scripts/angular.min.js"></script>
+    <script src="scritps/TestPageController.js"></script>
 </head>
-<body >
+<body ng-controller="myController">
     <div > 
-       Boolean check: {{ 1 == 1 }}
+        {{ message }}
     </div>
     <div>
-       Jason - Age: {{ {name: 'Jason', age: 38 }.age }}
-    </div>
-    <div>
-       Testing Another Name: {{ ['Paul', 'Jason', 'James'][2] }}
+        {{ message }}
     </div>
 </body>
 </html>
