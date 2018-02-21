@@ -1,0 +1,45 @@
+﻿<html ng-app="page8Module">
+<head>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="scritps/Page8Controller.js"></script>
+    <link href="style/page6.css" rel="stylesheet" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div ng-controller="page8Controller">
+
+        <div>
+            Order By 
+            <select ng-model="sortColumn">
+                <option value="firstName">Name Asc</option>
+                <option value="age">Age Asc</option>
+                <option value="birthDate">Birth Date Asc</option>
+            </select>
+        </div>
+
+        <br />
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in employees | orderBy :sortColumn">
+                    <td>{{ item.firstName }}</td>
+                    <td>{{ item.lastName }}</td>
+                    <td>{{ item.age }}</td>
+                    <td>{{ item.birthDate | date:"MM/dd/yyyy" }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<html ng-app="page10Module">
+<head>
+    <meta charset="utf-8" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="scritps/Page10Controller.js"></script>
+    <link href="style/page9.css" rel="stylesheet" />
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div ng-controller="page10Controller">
+        Search : <input type="text" placeholder="Search Employees" ng-model="searchText.firstName" />
+        <br/>
+        <br/>
+        <table>
+            <thead>
+                <tr>
+                    <th ng-click="sortData('firstName')">First Name <div ng-class="getSortClass('firstName')" /></th>
+                    <th ng-click="sortData('lastName')">Last Name <div ng-class="getSortClass('lastName')" /></th>
+                    <th ng-click="sortData('age')">Age <div ng-class="getSortClass('age')" /></th>
+                    <th ng-click="sortData('birthDate')">Date of Birth <div ng-class="getSortClass('birthDate')" /></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in employees | filter: searchText">
+                    <td>{{ item.firstName }}</td>
+                    <td>{{ item.lastName }}</td>
+                    <td>{{ item.age }}</td>
+                    <td>{{ item.birthDate | date:"MM/dd/yyyy" }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

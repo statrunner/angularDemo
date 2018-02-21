@@ -131,12 +131,16 @@
     <Content Include="About.aspx" />
     <Content Include="Angular\media\usa_flag.png" />
     <Content Include="Angular\Page1.html" />
+    <Content Include="Angular\Page10.html" />
     <Content Include="Angular\Page2.html" />
     <Content Include="Angular\Page3.html" />
     <Content Include="Angular\Page4.html" />
     <Content Include="Angular\Page5.html" />
     <Content Include="Angular\Page6.html" />
     <Content Include="Angular\Page7.html" />
+    <Content Include="Angular\Page8.html" />
+    <Content Include="Angular\Page9.html" />
+    <Content Include="Angular\scritps\Page10Controller.js" />
     <Content Include="Angular\scritps\Page1Controller.js" />
     <Content Include="Angular\scritps\Page2Controller.js" />
     <Content Include="Angular\scritps\Page3Controller.js" />
@@ -144,7 +148,10 @@
     <Content Include="Angular\scritps\Page5Controller.js" />
     <Content Include="Angular\scritps\Page6Controller.js" />
     <Content Include="Angular\scritps\Page7Controller.js" />
+    <Content Include="Angular\scritps\Page8Controller.js" />
+    <Content Include="Angular\scritps\Page9Controller.js" />
     <Content Include="Angular\style\page6.css" />
+    <Content Include="Angular\style\page9.css" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\angular-material.css" />
     <Content Include="Content\angular-material.layout-attributes.css" />
